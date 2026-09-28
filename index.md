@@ -1,3 +1,4 @@
+<style>header { display: none !important; } body { padding-top: 60px !important; }</style>
 I'm Harry, a Mechanical Engineering student with a CS minor at McGill.
 
 <div style="margin-top: 30px;">
