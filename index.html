@@ -28,19 +28,19 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 40px;
+            table-layout: fixed;
         }
-       .intro-text {
-    padding-right: 30px;
-    vertical-align: middle;
-    font-size: 12px;
-    width: 1px;        
-    white-space: nowrap; 
-}
-.intro-photo {
-    vertical-align: middle;
-    width: 250px;
-    text-align: left; 
-}
+        .intro-text {
+            vertical-align: middle;
+            font-size: 12px;
+            text-align: left;
+            padding-right: 30px;
+        }
+        .intro-photo {
+            vertical-align: middle;
+            width: 250px;
+            text-align: right;
+        }
         .intro-photo img {
             width: 250px;
             height: 250px;
@@ -85,23 +85,20 @@
 
 <body>
     <table class="intro-table">
-                .intro-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 40px;
-            table-layout: fixed; /* 核心：强制两栏物理平分总宽度 */
-        }
-        .intro-text {
-            vertical-align: middle;
-            font-size: 12px;
-            text-align: left;
-        }
-        .intro-photo {
-            vertical-align: middle;
-            width: 250px; /* 严格把照片这一栏锁定在 250px */
-            text-align: right; /* 核心：强制照片在格子内彻底向右看齐 */
-        }
-
+        <tr>
+            <td class="intro-text">
+                <h1>Harry</h1>
+                <p>
+                    I am a Mechanical Engineering student with a CS minor at McGill University.
+                </p>
+                <p class="links-heading">
+                    <a href="www.linkedin.com/in/h-harry" target="_blank" class="linkedin-link">LinkedIn</a>
+                </p>
+            </td>
+            <td class="intro-photo">
+                <img src="profile.jpg" alt="Andrew's Profile Photo">
+            </td>
+        </tr>
     </table>
 
     <div class="section-title">Outputs</div>
