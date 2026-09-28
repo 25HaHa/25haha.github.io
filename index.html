@@ -85,20 +85,23 @@
 
 <body>
     <table class="intro-table">
-        <tr>
-            <td class="intro-text">
-                <h1>Harry</h1>
-                <p>
-                    I am a Mechanical Engineering student with a CS minor at McGill University.
-                </p>
-                <p class="links-heading">
-                    <a href="www.linkedin.com/in/h-harry" target="_blank" class="linkedin-link">LinkedIn</a>
-                </p>
-            </td>
-            <td class="intro-photo">
-                <img src="250x250.png" alt="Harry's Profile Photo">
-            </td>
-        </tr>
+                .intro-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            table-layout: fixed; /* 核心：强制两栏物理平分总宽度 */
+        }
+        .intro-text {
+            vertical-align: middle;
+            font-size: 12px;
+            text-align: left;
+        }
+        .intro-photo {
+            vertical-align: middle;
+            width: 250px; /* 严格把照片这一栏锁定在 250px */
+            text-align: right; /* 核心：强制照片在格子内彻底向右看齐 */
+        }
+
     </table>
 
     <div class="section-title">Outputs</div>
