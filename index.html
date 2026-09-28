@@ -93,8 +93,18 @@
         <div class="intro-text">
             <h1>Harry</h1>
 <div class="bio-text">
-    I am a Mechanical Engineering student with a CS minor at McGill University.
+    I am a Mechanical Engineering student with a CS minor<br class="desktop-only">at McGill University.
 </div>
+<style>
+.desktop-only {
+    display: none;
+}
+@media (min-width: 768px) {
+    .desktop-only {
+        display: inline;
+    }
+}
+</style>
             <div class="links-heading">
                 <a href="https://linkedin.com/in/h-harry" target="_blank" class="linkedin-link">LinkedIn</a>
             </div>
