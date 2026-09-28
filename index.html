@@ -24,22 +24,22 @@
             color: #f09228;
             text-decoration: underline;
         }
-        .intro-table {
-            width: 100%;
-            border-collapse: collapse;
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 40px;
-            table-layout: fixed;
+            width: 100%;
         }
         .intro-text {
-            vertical-align: middle;
             font-size: 12px;
             text-align: left;
-            padding-right: 30px;
+            padding-right: 40px;
         }
         .intro-photo {
-            vertical-align: middle;
+            flex-shrink: 0;
             width: 250px;
-            text-align: right;
+            height: 250px;
         }
         .intro-photo img {
             width: 250px;
@@ -73,6 +73,7 @@
             padding-bottom: 5px;
             margin-top: 40px;
             margin-bottom: 25px;
+            width: 100%;
         }
         p {
             margin: 0 0 20px 0;
@@ -84,22 +85,20 @@
 </head>
 
 <body>
-    <table class="intro-table">
-        <tr>
-            <td class="intro-text">
-                <h1>Harry</h1>
-                <p>
-                    I am a Mechanical Engineering student with a CS minor at McGill University.
-                </p>
-                <p class="links-heading">
-                    <a href="www.linkedin.com/in/h-harry" target="_blank" class="linkedin-link">LinkedIn</a>
-                </p>
-            </td>
-            <td class="intro-photo">
-                <img src="250x250.png" alt="Harry's Profile Photo">
-            </td>
-        </tr>
-    </table>
+    <div class="intro-container">
+        <div class="intro-text">
+            <h1>Harry</h1>
+            <p>
+                I am a Mechanical Engineering student with a CS minor at McGill University.
+            </p>
+            <div class="links-heading">
+                <a href="www.linkedin.com/in/h-harry" target="_blank" class="linkedin-link">LinkedIn</a>
+            </div>
+        </div>
+        <div class="intro-photo">
+            <img src="250x250.png" alt="Harry's Profile Photo">
+        </div>
+    </div>
 
     <div class="section-title">Outputs</div>
     
