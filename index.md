@@ -1,5 +1,6 @@
-<style>header { display: none !important; } body { padding-top: 60px !important; }</style>
-I'm Harry, a Mechanical Engineering student with a CS minor at McGill.
+<style>header, footer { display: none !important; } body { padding-top: 60px !important; }</style>
+
+I'm Andrew, a Mechanical Engineering student with a CS minor at McGill.
 
 <div style="margin-top: 30px;">
     <a href="https://www.linkedin.com/in/h-harry/" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; color: #0077b5; font-weight: bold; font-size: 1.1em;">
